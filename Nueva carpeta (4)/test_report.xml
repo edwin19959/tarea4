@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+	<testsuite name="TestInstagramLogin-20241124182818" tests="1" file=".py" time="13.465" timestamp="2024-11-24T18:28:31" failures="1" errors="0" skipped="0">
+		<testcase classname="TestInstagramLogin" name="test_login_success" time="13.465" timestamp="2024-11-24T18:28:31" file="test_instagram.py" line="18">
+			<failure type="AssertionError" message="No se pudo acceder al perfil"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\edwin\OneDrive\Escritorio\Nueva carpeta (4)\test_instagram.py", line 40, in test_login_success
+    profile_icon = driver.find_element(By.XPATH, "//span[@aria-label='Perfil']")
+  File "c:\Users\edwin\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 766, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\edwin\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 380, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\edwin\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@aria-label='Perfil']"}
+  (Session info: chrome=131.0.6778.86); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x009C33E3+25059]
+	(No symbol) [0x0094CDE4]
+	(No symbol) [0x0082BEC3]
+	(No symbol) [0x0086FD86]
+	(No symbol) [0x0086FFCB]
+	(No symbol) [0x008AD952]
+	(No symbol) [0x00891F44]
+	(No symbol) [0x008AB51E]
+	(No symbol) [0x00891C96]
+	(No symbol) [0x00863FAC]
+	(No symbol) [0x00864F3D]
+	GetHandleVerifier [0x00CB5543+3113795]
+	GetHandleVerifier [0x00CCA20A+3198986]
+	GetHandleVerifier [0x00CC29E2+3168226]
+	GetHandleVerifier [0x00A63250+680016]
+	(No symbol) [0x0095572D]
+	(No symbol) [0x009529D8]
+	(No symbol) [0x00952B75]
+	(No symbol) [0x009457D0]
+	BaseThreadInitThunk [0x76BF7BA9+25]
+	RtlInitializeExceptionChain [0x77E6C0CB+107]
+	RtlClearBits [0x77E6C04F+191]
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\edwin\OneDrive\Escritorio\Nueva carpeta (4)\test_instagram.py", line 44, in test_login_success
+    self.fail("No se pudo acceder al perfil")
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: No se pudo acceder al perfil
+]]></failure>
+		</testcase>
+	</testsuite>
+</testsuites>

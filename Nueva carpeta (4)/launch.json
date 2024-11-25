@@ -1,0 +1,13 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Python: Test Instagram",
+        "type": "python",
+        "request": "launch",
+        "program": "${workspaceFolder}/test_instagram.py",
+        "console": "integratedTerminal"
+      }
+    ]
+  }
+  
